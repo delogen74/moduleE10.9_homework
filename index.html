@@ -3,86 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме | Каменский Олег Владиславович</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Резюме Олега Каменского</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Шапка сайта -->
+    <!-- Навигация -->
     <header>
-        <div class="container">
-            <h1>Каменский Олег Владиславович</h1>
-            <p>Интернет-маркетолог | Fullstack-разработчик (Python)</p>
-            <img src="https://via.placeholder.com/150" alt="Фотография Олега">
-        </div>
+        <nav class="navbar">
+            <div class="logo">Олег Каменский</div>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <!-- Обо мне -->
+    <section id="about" class="section about">
+        <div class="content">
+            <div class="image">
+                <img src="https://via.placeholder.com/200" alt="Олег Каменский">
+            </div>
+            <div class="text">
+                <h1>Привет, я Олег!</h1>
+                <p>Я — молодой и амбициозный программист, стремящийся развиваться в веб-разработке и создании современных приложений. Мой опыт включает работу с Python, Django и JavaScript.</p>
+                <button onclick="toggleMore()" class="btn">Подробнее</button>
+                <div id="more-info" class="hidden">
+                    <p>Обожаю решать сложные задачи и искать нестандартные решения. Моя цель — стать профессионалом, способным разрабатывать лучшие продукты на рынке.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Опыт работы (таймлайн) -->
+    <section id="experience" class="section">
+        <h2>Опыт работы</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Junior Developer</h3>
+                <p>XYZ Компания, 2022 - Настоящее время</p>
+                <p>Разработка веб-приложений на Django и React, интеграция API и оптимизация пользовательского интерфейса.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Python Intern</h3>
+                <p>ABC Компания, 2021 - 2022</p>
+                <p>Автоматизация процессов, создание скриптов и улучшение внутреннего ПО.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Навыки -->
-    <section id="skills">
-        <div class="container">
-            <h2>Навыки</h2>
+    <section id="skills" class="section">
+        <h2>Мои навыки</h2>
+        <div class="skills">
             <div class="skill">
-                <p>SEO и интернет-маркетинг</p>
-                <div class="progress"><div style="width: 90%;"></div></div>
+                <span>Python</span>
+                <div class="skillbar"><div class="filled" style="width: 90%;"></div></div>
             </div>
             <div class="skill">
-                <p>Разработка на Python (Django, SQL)</p>
-                <div class="progress"><div style="width: 75%;"></div></div>
+                <span>JavaScript</span>
+                <div class="skillbar"><div class="filled" style="width: 75%;"></div></div>
             </div>
             <div class="skill">
-                <p>Копирайтинг и контент-стратегия</p>
-                <div class="progress"><div style="width: 85%;"></div></div>
+                <span>Django</span>
+                <div class="skillbar"><div class="filled" style="width: 85%;"></div></div>
             </div>
-        </div>
-    </section>
-
-    <!-- Опыт работы -->
-    <section id="experience">
-        <div class="container">
-            <h2>Опыт работы</h2>
-            <ul class="timeline">
-                <li>
-                    <h3>Интернет-маркетолог</h3>
-                    <p>MegaGen Russia | Февраль 2024 — Июль 2024</p>
-                </li>
-                <li>
-                    <h3>Интернет-маркетолог</h3>
-                    <p>Freelance | Январь 2021 — Июль 2024</p>
-                </li>
-                <li>
-                    <h3>Контент-маркетолог</h3>
-                    <p>Проект FrenchTime | Январь 2020 — Июнь 2024</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Образование -->
-    <section id="education">
-        <div class="container">
-            <h2>Образование и курсы</h2>
-            <ul>
-                <li>2026 — Магистратура, РАНХиГС</li>
-                <li>2024 — Fullstack-разработчик на Python, Skillfactory</li>
-                <li>2025 — Специалист по контекстной рекламе, Яндекс Практикум</li>
-            </ul>
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="skillbar"><div class="filled" style="width: 80%;"></div></div>
+            </div>
         </div>
     </section>
 
     <!-- Контакты -->
-    <section id="contacts">
-        <div class="container">
-            <h2>Контакты</h2>
-            <p>Email: <a href="mailto:Jeckling@yandex.ru">Jeckling@yandex.ru</a></p>
-            <p>Телефон: +7 (950) 734-71-41</p>
+    <section id="contact" class="section">
+        <h2>Связаться со мной</h2>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:oleg.kamensky@example.com">oleg.kamensky@example.com</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/oleg-kamensky</a></p>
+            <p>GitHub: <a href="#">github.com/delogen74</a></p>
         </div>
     </section>
 
-    <!-- Подвал -->
-    <footer>
-        <div class="container">
-            <p>© 2024 Каменский Олег Владиславович. Все права защищены.</p>
-        </div>
-    </footer>
+    <!-- Скрипты -->
+    <script src="script.js"></script>
 </body>
 </html>
-
